@@ -1,0 +1,96 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.quiz-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+/* Welcome Screen */
+.welcome-screen {
+    text-align: center;
+}
+
+#username {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+/* Quiz Header */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+/* Question Styling */
+.question {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.options-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.option-btn {
+    padding: 1rem;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.option-btn:hover:not([disabled]) {
+    background: #3498db;
+    color: white;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+}
+
+/* Results Screen */
+.results-screen {
+    text-align: center;
+}
+
+.highscores-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Buttons */
+button {
+    padding: 0.8rem 1.5rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .quiz-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

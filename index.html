@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game | Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- Welcome Screen -->
+        <div class="welcome-screen active">
+            <h1>Quiz Challenge</h1>
+            <input type="text" id="username" placeholder="Enter your name">
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Area -->
+        <div class="quiz-area">
+            <div class="quiz-header">
+                <div class="score">Score: <span>0</span></div>
+                <div class="timer">Time: <span>20</span>s</div>
+                <div class="progress">Question <span>1</span>/10</div>
+            </div>
+            
+            <div class="question-container">
+                <h2 class="question"></h2>
+                <div class="options-container"></div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="results-screen">
+            <h2>Quiz Completed!</h2>
+            <p>Final Score: <span class="final-score">0</span></p>
+            <div class="highscores">
+                <h3>High Scores</h3>
+                <ol class="highscores-list"></ol>
+            </div>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
